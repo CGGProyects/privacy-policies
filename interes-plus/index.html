@@ -5,57 +5,204 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Política de Privacidad — Interés+</title>
   <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-           max-width: 700px; margin: 40px auto; padding: 0 20px;
-           color: #1e293b; line-height: 1.7; }
-    h1 { color: #0f172a; font-size: 28px; }
-    h2 { color: #0f172a; font-size: 18px; margin-top: 32px; }
-    p, li { color: #475569; }
-    a { color: #10b981; }
-    .updated { color: #94a3b8; font-size: 14px; }
+    :root {
+      --navy: #0F172A;
+      --navy-light: #334155;
+      --green: #10B981;
+      --gray: #64748B;
+      --border: #E2E8F0;
+      --bg: #F8FAFC;
+      --card: #FFFFFF;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--navy);
+      line-height: 1.65;
+    }
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 32px 20px 64px;
+    }
+    header {
+      border-bottom: 3px solid var(--green);
+      padding-bottom: 20px;
+      margin-bottom: 28px;
+    }
+    h1 {
+      font-size: 1.9rem;
+      margin: 0 0 12px;
+      color: var(--navy);
+    }
+    .meta {
+      font-size: 0.9rem;
+      color: var(--gray);
+    }
+    .meta strong { color: var(--navy-light); }
+    h2 {
+      font-size: 1.25rem;
+      margin-top: 36px;
+      color: var(--navy);
+      border-left: 4px solid var(--green);
+      padding-left: 12px;
+    }
+    h3 {
+      font-size: 1.05rem;
+      margin-top: 24px;
+      color: var(--navy-light);
+    }
+    h4 {
+      font-size: 0.98rem;
+      margin-top: 18px;
+      color: var(--navy-light);
+    }
+    ul { padding-left: 22px; }
+    li { margin-bottom: 6px; }
+    a { color: var(--green); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 0.92rem;
+    }
+    th, td {
+      text-align: left;
+      padding: 10px 12px;
+      border: 1px solid var(--border);
+    }
+    th { background: var(--navy); color: #fff; font-weight: 600; }
+    tr:nth-child(even) td { background: #fff; }
+    tr:nth-child(odd) td { background: var(--bg); }
+    .highlight {
+      background: rgba(16,185,129,0.08);
+      border: 1px solid rgba(16,185,129,0.3);
+      border-radius: 10px;
+      padding: 14px 16px;
+      margin: 16px 0;
+    }
+    footer {
+      margin-top: 48px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      font-size: 0.85rem;
+      color: var(--gray);
+      font-style: italic;
+    }
+    .contact-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px 20px;
+      margin-top: 12px;
+    }
   </style>
 </head>
 <body>
-  <h1>Política de Privacidad</h1>
-  <p class="updated">Última actualización: 29 de mayo de 2026</p>
-  <p>Esta política describe cómo <strong>Interés+</strong> trata la información cuando usas la app.</p>
+  <div class="container">
+    <header>
+      <h1>Política de Privacidad — Interés+</h1>
+      <p class="meta">
+        <strong>Última actualización:</strong> 10 de junio de 2026<br>
+        <strong>Desarrollador:</strong> Christian Galindez<br>
+        <strong>Contacto:</strong> <a href="mailto:christian@cggprojects.com">christian@cggprojects.com</a>
+      </p>
+    </header>
 
-  <h2>1. Datos que recopilamos</h2>
-  <p><strong>Interés+ no recopila datos personales identificables.</strong> No requiere registro ni inicio de sesión.</p>
-  <ul>
-    <li><strong>Informes de fallos anónimos:</strong> Firebase Crashlytics recopila datos de fallos anónimos para mejorar la estabilidad.</li>
-    <li><strong>Compras premium:</strong> RevenueCat gestiona las transacciones. No almacenamos datos de pago.</li>
-    <li><strong>Publicidad e identificador de publicidad:</strong> La versión gratuita muestra anuncios de Google AdMob. AdMob accede al <strong>Identificador de publicidad (Advertising ID)</strong> de tu dispositivo para mostrar anuncios y medir su rendimiento. Este identificador es reiniciable: puedes restablecerlo o limitar su uso desde Ajustes &gt; Privacidad &gt; Anuncios de tu dispositivo Android. El tratamiento que hace Google se rige por su <a href="https://policies.google.com/privacy">Política de Privacidad</a>. Con la versión PRO no se muestran anuncios.</li>
-  </ul>
+    <h2>1. Información general</h2>
+    <p>Interés+ es una aplicación de calculadoras financieras. Esta política de privacidad explica qué datos recopilamos, cómo los usamos y qué derechos tienes sobre ellos.</p>
 
-  <h2>2. Datos que NO recopilamos</h2>
-  <ul>
-    <li>Nombre, correo ni información de contacto</li>
-    <li>Datos financieros introducidos en la app (todos los cálculos son locales)</li>
-    <li>Ubicación geográfica precisa (GPS)</li>
-    <li>Identificadores permanentes del hardware (IMEI, número de serie). El único identificador utilizado es el Identificador de publicidad, reiniciable, descrito arriba.</li>
-  </ul>
+    <h2>2. Datos que NO recopilamos</h2>
+    <p>Interés+ <strong>no recopila ni almacena</strong>:</p>
+    <ul>
+      <li>Tu nombre, dirección de correo u otros datos personales identificables</li>
+      <li>Datos de localización</li>
+      <li>Datos de contacto</li>
+      <li>Historial de cálculos en servidores externos</li>
+      <li>Datos financieros que introduces en las calculadoras</li>
+    </ul>
+    <p>Todos los cálculos se realizan <strong>localmente en tu dispositivo</strong> y no se envían a ningún servidor.</p>
 
-  <h2>3. Almacenamiento local</h2>
-  <p>Los cálculos se procesan únicamente en tu dispositivo y nunca se transmiten a servidores externos.</p>
+    <h2>3. Datos que SÍ recopilamos</h2>
 
-  <h2>4. Consentimiento publicitario (UE/EEE)</h2>
-  <p>Si te encuentras en la Unión Europea o el Espacio Económico Europeo, antes de mostrar anuncios te pedimos tu consentimiento mediante el formulario de Google (UMP), conforme al RGPD. Puedes modificar tu elección en cualquier momento desde los ajustes de privacidad de la app.</p>
+    <h3>3.1 Compras dentro de la app</h3>
+    <p>Si realizas una compra premium, los datos de la transacción son gestionados por:</p>
+    <ul>
+      <li><strong>Google Play Store</strong> — sujeto a la política de privacidad de Google</li>
+      <li><strong>RevenueCat</strong> — plataforma de gestión de compras (revenuecat.com/privacy)</li>
+    </ul>
+    <p>Interés+ únicamente recibe confirmación de si la compra se ha realizado, sin acceder a datos de pago.</p>
 
-  <h2>5. Servicios de terceros</h2>
-  <ul>
-    <li><a href="https://firebase.google.com/support/privacy">Firebase Crashlytics y Remote Config</a></li>
-    <li><a href="https://www.revenuecat.com/privacy">RevenueCat</a> — gestión de compras</li>
-    <li><a href="https://policies.google.com/privacy">Google AdMob</a> — publicidad e Identificador de publicidad (usuarios gratuitos)</li>
-  </ul>
+    <h3>3.2 Publicidad (Google AdMob)</h3>
+    <p>La versión gratuita de Interés+ muestra anuncios a través de <strong>Google AdMob</strong>. Para mostrarlos, AdMob puede recopilar y procesar:</p>
+    <ul>
+      <li>El <strong>identificador de publicidad de Android (Advertising ID)</strong> — un identificador reiniciable que puedes restablecer o eliminar en cualquier momento desde <em>Ajustes → Google → Anuncios</em> de tu dispositivo.</li>
+      <li>Datos de uso del anuncio (impresiones, interacciones) para mostrar publicidad y medir su rendimiento.</li>
+    </ul>
+    <div class="highlight">
+      Si compras la versión <strong>Premium</strong>, los anuncios se eliminan por completo y AdMob deja de cargarse.
+    </div>
 
-  <h2>6. Menores de edad</h2>
-  <p>Interés+ no está dirigida a menores de 13 años.</p>
+    <h4>Consentimiento (RGPD / UMP)</h4>
+    <p>Si te encuentras en la Unión Europea o el EEE, al abrir la app por primera vez se muestra un formulario de consentimiento (Google User Messaging Platform) donde eliges si aceptas anuncios personalizados. Puedes cambiar tu elección en cualquier momento desde los ajustes de la app.</p>
 
-  <h2>7. Tus derechos (RGPD)</h2>
-  <p>Si eres residente en la UE, puedes acceder, rectificar o solicitar la eliminación de tus datos contactándonos en <a href="mailto:christian@cggproyects.com">christian@cggproyects.com</a>.</p>
+    <h3>3.3 Informes de fallos (Firebase Crashlytics)</h3>
+    <p>Para detectar y corregir errores, usamos <strong>Firebase Crashlytics</strong>, que recopila de forma anónima registros de fallos y diagnóstico (tipo de dispositivo, versión del sistema, estado de la app en el momento del fallo). Estos datos no te identifican personalmente.</p>
 
-  <h2>8. Contacto</h2>
-  <p><a href="mailto:christian@cggproyects.com">christian@cggproyects.com</a></p>
+    <h3>3.4 Preferencias de la app</h3>
+    <p>La app guarda preferencias básicas (tema, estado de la compra) de forma local en tu dispositivo usando SharedPreferences. Estos datos no salen de tu dispositivo.</p>
+
+    <h2>4. Permisos de la app</h2>
+    <p>Interés+ solicita los siguientes permisos:</p>
+    <ul>
+      <li><strong>Internet</strong> — para verificar la compra premium (RevenueCat), cargar anuncios (AdMob) y enviar informes de fallos (Crashlytics)</li>
+      <li><strong>Identificador de publicidad (com.google.android.gms.permission.AD_ID)</strong> — requerido por AdMob para mostrar publicidad</li>
+    </ul>
+    <p>La app <strong>no solicita</strong> acceso a: cámara, micrófono, contactos, localización, almacenamiento externo ni ningún otro permiso sensible.</p>
+
+    <h2>5. Servicios de terceros</h2>
+    <table>
+      <thead>
+        <tr><th>Servicio</th><th>Finalidad</th><th>Política de privacidad</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Google Play Store</td><td>Distribución y pagos</td><td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td></tr>
+        <tr><td>RevenueCat</td><td>Gestión de compras in-app</td><td><a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a></td></tr>
+        <tr><td>Google AdMob</td><td>Publicidad en la versión gratuita</td><td><a href="https://policies.google.com/technologies/ads">policies.google.com/technologies/ads</a></td></tr>
+        <tr><td>Firebase Crashlytics</td><td>Informes de fallos y diagnóstico</td><td><a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></td></tr>
+      </tbody>
+    </table>
+
+    <h2>6. Menores de edad</h2>
+    <p>Interés+ no está dirigida a menores de 13 años y no recopila conscientemente datos de menores. Si eres padre o tutor y crees que tu hijo ha proporcionado datos personales, contáctanos.</p>
+
+    <h2>7. Cambios en esta política</h2>
+    <p>Notificaremos cualquier cambio importante publicando la nueva política en esta página y actualizando la fecha de "última actualización". Te recomendamos revisar esta política periódicamente.</p>
+
+    <h2>8. Tus derechos (RGPD)</h2>
+    <p>Si eres residente en la Unión Europea, tienes derecho a:</p>
+    <ul>
+      <li>Acceder a tus datos personales</li>
+      <li>Rectificar datos incorrectos</li>
+      <li>Solicitar la eliminación de tus datos</li>
+      <li>Oponerte al procesamiento de tus datos</li>
+    </ul>
+    <p>Para ejercer estos derechos, contáctanos en: <strong><a href="mailto:christian@cggprojects.com">christian@cggprojects.com</a></strong></p>
+
+    <h2>9. Contacto</h2>
+    <p>Para cualquier pregunta sobre esta política de privacidad:</p>
+    <div class="contact-card">
+      <strong>Christian Galindez</strong><br>
+      Email: <a href="mailto:christian@cggprojects.com">christian@cggprojects.com</a>
+    </div>
+
+    <footer>
+      Esta política de privacidad fue redactada de conformidad con el Reglamento General de Protección de Datos (RGPD) de la Unión Europea y la Ley Orgánica de Protección de Datos (LOPDGDD) de España.
+    </footer>
+  </div>
 </body>
 </html>
